@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore ./SQINTEGRATION/aspnetcoreapp
+      run: dotnet restore ./aspnetcoreapp
     - name: Build
-      run: dotnet build --no-restore ./SQINTEGRATION/aspnetcoreapp
+      run: dotnet build --no-restore ./aspnetcoreapp
     - name: Test
-      run: dotnet test --no-build --verbosity normal ./SQINTEGRATION/aspnetcoreapp
+      run: dotnet test --no-build --verbosity normal ./aspnetcoreapp
